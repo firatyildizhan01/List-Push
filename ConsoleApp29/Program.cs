@@ -6,39 +6,19 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp29
 {
-    class Animal
-    {
-       public void animalSound()
-        {
-            Console.WriteLine("animal sound is this");
-        }
-    }
-    class pig : Animal
-    {
-        public void animalSound()
-        {
-            Console.WriteLine("animal sound it would be");
-        }
-
-    }
-    class dog : Animal
-    {
-      public void animalSound()
-        {
-            Console.WriteLine("animal sound it can be");
-        }        
-    }
     class Program
     {
         static void Main(string[] args)
         {
-            Animal myAnimal = new Animal();
-            pig mypig = new pig();
-            dog mydog = new dog();
-
-            myAnimal.animalSound();
-            mypig.animalSound();
-            mydog.animalSound();
+            try
+            {
+                int[] liste = { 1, 2, 3, 4, 5, 6, 7 };
+                Console.WriteLine(liste[1]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
             Console.ReadLine();
         }
     }
